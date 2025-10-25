@@ -72,7 +72,8 @@ GEMINI_API_KEY=your_google_api_key_here
 ### 5️⃣ Start the backend
 
 ```bash
-uvicorn backend.main:app --reload
+venv\Scripts\activate
+uvicorn backend.main:app --reload --port=8000
 ```
 
 ### 6️⃣ Run the frontend
@@ -80,6 +81,7 @@ uvicorn backend.main:app --reload
 In another terminal window:
 
 ```bash
+venv\Scripts\activate
 streamlit run frontend/streamlit_app.py
 ```
 
